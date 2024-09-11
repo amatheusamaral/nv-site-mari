@@ -1,0 +1,234 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900&display=swap');
+
+/* Estiliza o cabeçalho */
+header {
+    width: 100%; /* O cabeçalho ocupa toda a largura da página */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    padding: 1rem; /* Adiciona espaçamento interno ao cabeçalho */
+    background-color: #FFFFFF; /* Fundo branco para destacar o título */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao cabeçalho */
+}
+
+/* Estiliza o título no cabeçalho */
+header h1 {
+    font-size: 2.5rem; /* Tamanho do texto */
+    color: #222831; /* Cor do texto */
+    margin: 0; /* Remove margens para um melhor alinhamento */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Ajusta o tamanho do texto para tablets */
+        letter-spacing: 0.2rem; /* Ajusta o espaçamento entre letras */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem; /* Ajusta o tamanho do texto para celulares */
+        letter-spacing: 0.1rem; /* Ajusta o espaçamento entre letras */
+    }
+}
+
+
+/* Estiliza o corpo da página */
+html {
+    overflow-y: scroll; /* Garante a exibição da barra de rolagem */
+    height: 100%; /* Garante que a página ocupe toda a altura da viewport */
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #a0686898;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* O corpo ocupa no mínimo toda a altura da viewport */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o conteúdo principal */
+main {
+    flex-grow: 1; /* O conteúdo principal cresce para ocupar o espaço disponível */
+    display: flex;
+    width: 100%; /* O conteúdo ocupa a largura total */
+}
+
+/* Estiliza as seções da página */
+section {
+    width: 50%; /* Faz cada seção ocupar metade da largura da página */
+    padding: 1rem; /* Espaçamento interno nas seções */
+    background-color: #FFFFFF; /* Adiciona fundo branco nas caixas */
+    border-radius: 0; /* Remove bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+/* Estiliza o botão verde para o link do WhatsApp */
+a.whatsapp-button {
+    display: inline-block; /* Faz com que o link se comporte como um bloco inline */
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #25D366; /* Cor de fundo verde do WhatsApp */
+    color: #FFFFFF; /* Cor do texto */
+    font-size: 1rem; /* Tamanho do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove o sublinhado do link */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+a.whatsapp-button:hover {
+    background-color: #128C7E; /* Cor de fundo verde mais escuro quando o botão é hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+}
+
+
+section img {
+    width: 62%; /* Faz a imagem ocupar toda a largura da seção */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 100%; /* Ajusta a largura dos inputs para caber na seção */
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 100%; /* Ajusta a largura para caber na seção */
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 100%;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* Remove a capacidade de interação dos títulos */
+h1, h2, h3, h4, h5, h6 {
+    pointer-events: none; /* Remove a capacidade de clicar */
+    cursor: default; /* Troca o cursor para o padrão */
+}
